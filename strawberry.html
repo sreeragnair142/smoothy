@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from demo.egenslab.com/html/restho/preview/shop-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 May 2025 04:40:04 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restho - Resturent HTML Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="icon" href="assets/images/icon/logo-icon.svg" type="image/gif" sizes="20x20">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="assets/css/all.css">
+
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/detailbootstrap.min.css">
+
+    <!-- box-icon -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+
+    <!-- swiper-slide -->
+    <link rel="stylesheet" href="css/swiperbundle.css">
+
+    <!-- nice-select -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+
+    <!-- magnefic popup css -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+
+    <!-- odometer css -->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/detail.css">
+
+</head>
+
+<body>
+     
+    </div>
+
+   
+    <!-- ========== Top Bar End============= -->
+    <style>
+     .header-area {
+            background-color: transparent;
+            position: absolute;
+            width: 100%;
+            z-index: 100;
+            padding: 20px 0;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px;
+        }
+        
+        .main-menu {
+            display: flex;
+        }
+        
+        .menu-list {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menu-list li {
+            margin: 0 15px;
+            position: relative;
+        }
+        
+        .menu-list li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 6px 0;
+        }
+        
+        .menu-list li a:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .menu-list li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: white;
+            left: 0;
+            bottom: 0;
+            transition: width 0.3s ease;
+        }
+        
+        .menu-list li a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            cursor: pointer;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu-btn:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        .mobile-menu-btn:active {
+            transform: scale(0.95);
+        }
+        
+        /* Prevent body scrolling when menu is open */
+        body.menu-open {
+            overflow: hidden;
+        }
+        
+        .banner-section {
+            background: linear-gradient(to bottom, #859396, #a6a8a4);
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .banner-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            z-index: 5;
+        }
+        
+        .banner-title {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .banner-breadcrumb {
+            display: flex;
+            align-items: center;
+        }
+        
+        .banner-breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .banner-breadcrumb span {
+            margin: 0 10px;
+        }
+        
+        .fruit-left {
+            position: absolute;
+            left: 0;
+            bottom: 10%;
+            width: 150px;
+            height: auto;
+        }
+        
+        .fruit-right {
+            position: absolute;
+            right: 5%;
+            top: 25%;
+            width: 200px;
+            height: auto;
+        }
+        
+        .wave-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+        }
+        
+        @media (max-width: 992px) {
+            .menu-list {
+                display: none;
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                padding: 20px 0;
+                flex-direction: column;
+                align-items: center;
+                z-index: 999;
+                opacity: 0;
+                transform: translateY(-20px);
+                transition: opacity 0.3s ease, transform 0.3s ease;
+            }
+            
+            .menu-list.active {
+                display: flex;
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            .menu-list li {
+                margin: 10px 0;
+                transform: translateX(-20px);
+                opacity: 0;
+                transition: transform 0.4s ease, opacity 0.4s ease;
+            }
+            
+            .menu-list.active li {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            
+            .menu-list.active li:nth-child(1) { transition-delay: 0.05s; }
+            .menu-list.active li:nth-child(2) { transition-delay: 0.1s; }
+            .menu-list.active li:nth-child(3) { transition-delay: 0.15s; }
+            .menu-list.active li:nth-child(4) { transition-delay: 0.2s; }
+            .menu-list.active li:nth-child(5) { transition-delay: 0.25s; }
+            .menu-list.active li:nth-child(6) { transition-delay: 0.3s; }
+            .menu-list.active li:nth-child(7) { transition-delay: 0.35s; }
+            
+            .mobile-menu-btn {
+                display: block;
+                font-size: 28px;
+            }
+            
+            .main-menu {
+                position: relative;
+            }
+            
+            .overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                z-index: 998;
+            }
+            
+            .overlay.active {
+                display: block;
+            }
+        }
+
+        .banner-section {
+ background-image: 
+  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+  url('/images/resource/pexels-nicola-barts-7937399.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 700px;
+position: relative;
+padding: 100px 0; /* adjust based on design */
+color: #fff; /* light text for dark overlay */
+
+}
+
+/* Default header style */
+.header-area {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+/* Scrolled header style */
+.header-area.scrolled {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-area .menu-list li a,
+.header-area .logo img {
+  transition: all 0.3s ease;
+}
+
+/* Optional: change text color on scroll */
+.header-area.scrolled .menu-list li a {
+  color: #000;
+}
+
+.header-area.scrolled .mobile-menu-btn {
+  color: #000;
+}
+
+.header-area.scrolled .logo img {
+  content: url('images/smoothie\ logo\ web\ \(1\).png'); 
+}
+
+
+  .menu-list {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .menu-list li {
+        position: relative;
+    }
+
+    .menu-list a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #333;
+        padding: 10px 0;
+        list-style: none;
+        min-width: 150px;
+        z-index: 1000;
+    }
+
+    .dropdown-menu li a {
+        padding: 10px 15px;
+        color: white;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu li a:hover {
+        background: #555;
+    }
+
+    </style>
+    <!-- ========== header============= -->
+<header id="mainHeader" class="header-area">
+        <div class="container">
+            <div class="flex-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/smoothie logo web white.png" alt="Smoothies Logo">
+                    </a>
+                </div>
+                
+                <div class="main-menu">
+                   <ul id="menuList" class="menu-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="dropdown">
+        <a href="products.html">Our Products</a>
+        <ul class="dropdown-menu">
+            <li><a href="milkshake.html">Milk Shake</a></li>
+            <li><a href="strawberry.html">Strawberry</a></li>
+            <li><a href="banana.html">Banana</a></li>
+        </ul>
+    </li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="distribution.html">Distribution</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+                </div>
+                
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="bi bi-list">≡</i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Overlay for closing menu when clicking outside -->
+<div id="menuOverlay" class="overlay"></div>
+
+<script>
+  // Scroll header effect
+  window.addEventListener("scroll", function () {
+    const header = document.getElementById("mainHeader");
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+  
+  // Mobile menu toggle with animation and outside click support
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const menuList = document.getElementById("menuList");
+  const overlay = document.getElementById("menuOverlay");
+  
+  function toggleMenu() {
+    menuList.classList.toggle("active");
+    overlay.classList.toggle("active");
+    
+    // Add active class to body to prevent scrolling when menu is open (optional)
+    document.body.classList.toggle("menu-open");
+  }
+  
+  // Toggle menu when clicking the button
+  mobileMenuBtn.addEventListener("click", function(e) {
+    e.stopPropagation();
+    toggleMenu();
+  });
+  
+  // Close menu when clicking outside
+  overlay.addEventListener("click", function() {
+    toggleMenu();
+  });
+  
+  // Close menu when clicking a link
+  const menuLinks = document.querySelectorAll(".menu-list li a");
+  menuLinks.forEach(link => {
+    link.addEventListener("click", function() {
+      if (window.innerWidth <= 992) {
+        toggleMenu();
+      }
+    });
+  });
+  
+  // Close mobile menu when resizing to desktop
+  window.addEventListener("resize", function() {
+    if (window.innerWidth > 992) {
+      menuList.classList.remove("active");
+      overlay.classList.remove("active");
+      document.body.classList.remove("menu-open");
+    }
+  });
+</script>
+
+    
+    <!-- Header Area End -->
+    
+    <!-- Banner Section Start -->
+    <section class="banner-section"> 
+        <div class="banner-content">
+            <h1 class="banner-title">Milk Shake</h1>
+            <div class="banner-breadcrumb">
+                <a href="index.html">Home</a>
+                <span>›</span>
+                <span>Milk Shake</span>
+            </div>
+        </div>
+        
+        <svg class="wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path fill="#ffffff" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,100L1360,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"></path>
+        </svg>
+    </section>
+    <!-- ========== banner end============= -->
+
+    <div class="shop-details pt-120 mb-120">
+        <div class="container">
+            <div class="row g-lg-5 gy-5">
+                <div class="col-lg-6">
+                    <div class="tab-content tab-content1" id="v-pills-tabContent">
+                       <div class="tab-pane fade active show" id="v-pills-img1" role="tabpanel"
+     aria-labelledby="v-pills-img1-tab">
+    <div class="gallery-big-image">
+        <img class="img-fluid custom-img" src="images/resource/pexels-nicola-barts-7937399.jpg" alt="">
+    </div>
+</div>
+
+<style>
+    .custom-img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    /* border-radius: 10px; */
+    display: block;
+    margin: 0 auto;
+}
+
+</style>
+                        <div class="tab-pane fade" id="v-pills-img2" role="tabpanel" aria-labelledby="v-pills-img2-tab">
+                            <img class="img-fluid" src="assets/images/bg/card-big-02.png" alt="">
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-img3" role="tabpanel" aria-labelledby="v-pills-img3-tab">
+                            <img class="img-fluid" src="assets/images/bg/card-big-03.png" alt="">
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-img4" role="tabpanel" aria-labelledby="v-pills-img4-tab">
+                            <img class="img-fluid" src="assets/images/bg/card-big-04.png" alt="">
+                        </div>
+                    </div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Product Gallery</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .product-gallery {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .main-image {
+      text-align: center;
+      margin-bottom: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 0;
+      position: relative;
+    }
+    
+    .main-image img {
+      width: 100%;
+      height: auto;
+      max-height: 500px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    
+    .thumbnail-container {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    
+    .thumbnail {
+      cursor: pointer;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      padding: 3px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      width: 120px;
+      height: 120px;
+    }
+    
+    .thumbnail.active {
+      border-color: #b38b59;
+      box-shadow: 0 0 8px rgba(179, 139, 89, 0.5);
+    }
+    
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 3px;
+    }
+    
+    .product-details {
+      margin-top: 40px;
+    }
+    
+    .product-title {
+      background-color: #b38b59;
+      color: white;
+      display: inline-block;
+      padding: 10px 25px;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="product-gallery">
+     
+      
+      <!-- Thumbnail navigation -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="thumbnail-container">
+            <div class="thumbnail active" data-img="assets/images/bg/card-sm-01.png">
+              <img src="images/resource/beverage-2.jpg" alt="Thumbnail 1">
+            </div>
+            <div class="thumbnail" data-img="assets/images/bg/card-sm-02.png">
+              <img src="images/resource/beverage-1.jpg" alt="Thumbnail 2">
+            </div>
+            <div class="thumbnail" data-img="assets/images/bg/card-sm-03.png">
+              <img src="images/resource/beverage-3.jpg" alt="Thumbnail 3">
+            </div>
+            <div class="thumbnail" data-img="assets/images/bg/card-sm-04.png">
+              <img src="images/resource/beverage-4.jpg" alt="Thumbnail 4">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Product details section -->
+      <div class="row product-details">
+        <!-- <div class="col-12">
+          <div class="product-title">
+            Item Details
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // JavaScript to handle thumbnail click and change main image
+    document.addEventListener('DOMContentLoaded', function() {
+      const thumbnails = document.querySelectorAll('.thumbnail');
+      const mainImage = document.getElementById('main-product-image');
+      
+      thumbnails.forEach(thumb => {
+        thumb.addEventListener('click', function() {
+          // Remove active class from all thumbnails
+          thumbnails.forEach(t => t.classList.remove('active'));
+          
+          // Add active class to clicked thumbnail
+          this.classList.add('active');
+          
+          // Update main image
+          const imgSrc = this.getAttribute('data-img');
+          mainImage.src = imgSrc;
+        });
+      });
+    });
+  </script>
+</body>
+</html>                </div>
+                <div class="col-lg-6">
+                    <div class="prod-details-content">
+                        <!-- <ul class="product-review2 d-flex flex-row align-items-center mb-25">
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><i class="bi bi-star-fill"></i></li>
+                            <li><a href="#" class="review-no"></a>(32 Review)</li>
+                        </ul> -->
+                        <h2>To Make Delicious Food Item.</h2>
+                        <div class="price-tag">
+                            <h4>$30 <del>$40</del></h4>
+                        </div>
+                        
+                        <p>Donec bibendum enim ut elit porta ullamcorper enim. Vestibulum  Nai wekemd bendum enim ut elit porta ullamcorper enim. Vestibulum  Nai sgdad bendum enim ut elit porta ullamcorper enim. Vestibulum  Nai wekemdini iaculis vitae nulla.nec bibendum enim ut elit porta ullamcor</p>
+                        <!-- <div class="prod-quantity d-flex align-items-center justify-content-start mb-20">
+                            <div class="quantity d-flex align-items-center">
+                                <div class="quantity-nav nice-number d-flex align-items-center">
+                                    <input type="number" value="1" min="1">
+                                </div>
+                            </div>
+                            <a href="cart.html" class="primary-btn3">Add to cart</a>
+                        </div> -->
+                       <div class="category-tag">
+                        <ul>
+                            <li>Ingrediants:</li>
+                            <li><a href="shop.html">Food(05),</a></li>
+                            <li><a href="shop.html">Modern Life(10),</a></li>
+                            <li><a href="shop.html">Healthy(02),</a></li>
+                            <li><a href="shop.html">Desset(04)</a></li>
+                        </ul>
+                        <ul>
+                            <li>Tag:</li>
+                            <li><a href="shop.html">Dinner,</a></li>
+                            <li><a href="shop.html">Breakfast,</a></li>
+                            <li><a href="shop.html">Berverage,</a></li>
+                            <li><a href="shop.html">Sea Food,</a></li>
+                            <li><a href="shop.html">Menu</a></li>
+                        </ul>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 pt-50" >
+                <div class="col-lg-12 mb-25">
+                    <h2 class="item-details-tt">Item Details</h2>
+                </div>
+               <div class="row g-4">
+                <div class="col-lg-3">
+                    <div class="nav nav2 nav  nav-pills" id="v-pills-tab2" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link btn--lg" id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="false">Recepie</button>
+                        <button class="nav-link active" id="v-pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+                            aria-selected="true">Review</button>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="tab-content tab-content2" id="v-pills-tabContent2">
+                        <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div class="description box--shadow">
+                                <p class="para-2 mb-2">Aenean dolor massa, rhoncus ut tortor in, pretium tempus neque. Vestibulum
+                                    venenatis leo et dictum finibus. Nulla vulputate dolor sit amet tristique dapibus. Maecenas
+                                    posuere luctus leo, non consequat felis ullamc orper non. Aliquam erat volutpat. Donec vitae
+                                    porta enim. Cras eu volutpat dolor, vitae accumsan tellus. Donec pulvinar auctor nunc, et
+                                    gravida elit porta non. Aliquam erat volutpat. Proin facilisis interdum felis, sit amet pretium
+                                    purus feugiat ac. Donec in leo metus. Sed quis dui nec justo ullamcorper molestie. Mauris
+                                    consequat lacinia est, eget tincidunt leo ornare sed</p>
+                                <p class="para-2">Aenean dolor massa, rhoncus ut tortor in, pretium tempus neque. Vestibulum
+                                    venenatis leo et dictum finibus dapi bus Maecenas posuere luctus leo, non consequat felis
+                                    ullamcorper non.</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade active show" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="comments-area">
+                                <!-- <div class="number-of-comment">
+                                    <h3>Comments(02) :</h3>
+                                </div> -->
+                                <div class="comment-list-area mb-60">
+                                    <ul class="comment-list">
+                                        <li>
+                                            <div class="single-comment d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap">
+                                                <div class="comment-image">
+                                                    <img src="images/clients/2.jpg" alt="image">
+                                                </div>
+                                                <div class="comment-content">
+                                                    <div class="c-header d-flex align-items-center">
+                                                        <div class="comment-meta">
+                                                            <h5 class="mb-0"><a href="#">Rocky Mike ,</a></h5>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                    <ul class="product-review">
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                    <div class="c-body">
+                                                        <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account. </p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="single-comment d-flex align-items-center justify-content-between flex-md-nowrap flex-wrap">
+                                                <div class="comment-image">
+                                                    <img src="images/clients/3.jpg" alt="image">
+                                                </div>
+                                                <div class="comment-content">
+                                                    <div class="c-header d-flex align-items-center">
+                                                        <div class="comment-meta">
+                                                            <h5 class="mb-0"><a href="#">Rony Jhon ,</a></h5>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <ul class="product-review">
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                        <li><i class="bi bi-star-fill"></i></li>
+                                                    </ul>
+                                                    <div class="c-body">
+                                                        <p>I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account. </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+        
+                                <div class="comment-form">
+                                    <div class="number-of-comment">
+                                        <h3>Leave A Reply</h3>
+                                    </div>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-inner mb-30">
+                                                    <input type="text" placeholder="Name*" required="">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-inner mb-30">
+                                                    <input type="email" placeholder="Email*" required="">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-inner mb-10">
+                                                    <textarea placeholder="Message..."></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-inner2 mb-30">
+                                                    <div class="comment-rate-area">
+                                                        <p>Your Rating</p>
+                                                        <div class="rate">
+                                                            <input type="radio" id="star5" name="rate" value="5">
+                                                            <label for="star5" title="text">5 stars</label>
+                                                            <input type="radio" id="star4" name="rate" value="4">
+                                                            <label for="star4" title="text">4 stars</label>
+                                                            <input type="radio" id="star3" name="rate" value="3">
+                                                            <label for="star3" title="text">3 stars</label>
+                                                            <input type="radio" id="star2" name="rate" value="2">
+                                                            <label for="star2" title="text">2 stars</label>
+                                                            <input type="radio" id="star1" name="rate" value="1">
+                                                            <label for="star1" title="text">1 star</label>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-inner two">
+                                                    <button class="primary-btn btn-lg" type="submit">Post Comment</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="related-items-area mb-120">
+        <div class="container">
+            <div class="row mb-50">
+                <div class="col-lg-12">
+                    <h2 class="item-details-tt">Related Item</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="swiper related-item-sliders">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="food-items2-wrap">
+                                <div class="food-img">
+                                    <img class="img-fluid" src="images/resource/slide1.jpg" alt="h2-food-item-1">
+                                    <div class="cart-icon">
+                                        <a href="cart.html"><i class="bi bi-cart-plus"></i></a>
+                                       </div>
+                                   
+                                </div>
+                                <div class="food-content">
+                                    <ul class="d-flex align-items-center justify-content-center p-0 gap-1">
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                    </ul>
+                                    <h3><a href="shop-details.html">Mutton with Shrimps</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="food-items2-wrap">
+                                <div class="food-img">
+                                    <img class="img-fluid" src="images/resource/slide2.jpg" alt="h2-food-item-1">
+                                    <div class="cart-icon">
+                                        <a href="cart.html"><i class="bi bi-cart-plus"></i></a>
+                                       </div>
+                                   
+                                </div>
+                                <div class="food-content">
+                                    <ul class="d-flex align-items-center justify-content-center p-0 gap-1">
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                    </ul>
+                                    <h3><a href="shop-details.html">Mutton Kabab</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="food-items2-wrap">
+                                <div class="food-img">
+                                    <img class="img-fluid" src="images/resource/slide3.jpg" alt="h2-food-item-1">
+                                    <div class="cart-icon">
+                                        <a href="cart.html"><i class="bi bi-cart-plus"></i></a>
+                                       </div>
+                                   
+                                </div>
+                                <div class="food-content">
+                                    <ul class="d-flex align-items-center justify-content-center p-0 gap-1">
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                    </ul>
+                                    <h3><a href="shop-details.html">Burger with Drinks</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="food-items2-wrap">
+                                <div class="food-img">
+                                    <img class="img-fluid" src="images/resource/slide4.jpg" alt="h2-food-item-1">
+                                    <div class="cart-icon">
+                                        <a href="cart.html"><i class="bi bi-cart-plus"></i></a>
+                                       </div>
+                                   
+                                </div>
+                                <div class="food-content">
+                                    <ul class="d-flex align-items-center justify-content-center p-0 gap-1">
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                        <li><i class="bi bi-star-fill"></i></li>
+                                    </ul>
+                                    <h3><a href="shop-details.html">Shrimps with Role</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+  const swiper = new Swiper('.related-item-sliders', {
+    loop: true,
+    autoplay: {
+      delay: 2500, // time between slides in ms
+      disableOnInteraction: false, // continue autoplay after user interaction
+    },
+    slidesPerView: 3,
+    spaceBetween: 30,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+</script>
+
+
+ <style>
+      
+        .footer {
+            position: relative;
+            background-color: #343333;
+            background-image: url('/images/resource/pexels-nicola-barts-7937399.jpg');  /* This would be replaced with your actual background image */
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            color: #fff;
+            padding: 50px 0 20px;
+            overflow: hidden;
+        }
+        
+        .pattern-layer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.05;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        /* Additional pattern layers for texture */
+        .pattern-layer-one {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/api/placeholder/400/400');
+            opacity: 0.04;
+            background-repeat: repeat;
+        }
+        
+        .pattern-layer-two {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/api/placeholder/400/400');
+            opacity: 0.03;
+            background-repeat: repeat;
+        }
+        
+        .pattern-layer-three {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/api/placeholder/600/600');
+            opacity: 0.04;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .widgets-section {
+            padding-bottom: 30px;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+        
+        .big-column {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 0 15px;
+        }
+        
+        .footer-column {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 0 15px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-widget h6 {
+            position: relative;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            color: #fff;
+        }
+        
+        .footer-widget h6:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background-color: #8bc34a;  /* Changed to match a greenish smoothie theme */
+        }
+        
+        .text {
+            line-height: 1.7;
+            margin-bottom: 15px;
+            color: #aaa;
+        }
+        
+        .contact-list {
+            list-style: none;
+        }
+        
+        .contact-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            color: #aaa;
+        }
+        
+        .contact-list .icon {
+            position: absolute;
+            left: 0;
+            top: 4px;
+            color: #8bc34a;  /* Changed to match a greenish smoothie theme */
+        }
+        
+        .footer-list {
+            list-style: none;
+        }
+        
+        .footer-list li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-list a {
+            color: #aaa;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-list a:hover {
+            color: #8bc34a;  /* Changed to match a greenish smoothie theme */
+            padding-left: 5px;
+        }
+        
+        .social-list {
+            list-style: none;
+        }
+        
+        .social-list li {
+            margin-bottom: 10px;
+        }
+        
+        .social-list a {
+            color: #aaa;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .social-list a:hover {
+            color: #8bc34a;  /* Changed to match a greenish smoothie theme */
+        }
+        
+        .social-list .icon {
+            margin-right: 10px;
+            width: 20px;
+            color: #8bc34a;  /* Changed to match a greenish smoothie theme */
+        }
+        
+        .newsletter-form .form-group {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        
+        .newsletter-form input[type="email"] {
+            display: block;
+            width: 100%;
+            line-height: 24px;
+            padding: 12px 20px;
+            height: 50px;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            outline: none;
+            margin-bottom: 10px;
+        }
+        
+        .newsletter-form input[type="email"]::placeholder {
+            color: #aaa;
+        }
+        
+        .newsletter-form button {
+            display: block;
+            width: 100%;
+            padding: 12px 20px;
+            text-align: center;
+            background-color: #8bc34a;  /* Changed to match a greenish smoothie theme */
+            color: #111;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .newsletter-form button:hover {
+            background-color: #fff;
+        }
+        
+        .footer-bottom {
+            padding: 20px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+        
+        .copyright {
+            color: #aaa;
+            font-size: 14px;
+        }
+        
+        /* Responsive */
+        @media only screen and (max-width: 991px) {
+            .big-column {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        
+        @media only screen and (max-width: 767px) {
+            .footer-column {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+    <!-- ========== Footer post end============= -->
+    <footer class="footer">
+        <div class="pattern-layer-one"></div>
+        <div class="pattern-layer-two"></div>
+        <div class="pattern-layer-three"></div>
+        <div class="container">
+            <!-- Widgets Section -->
+            <div class="widgets-section">
+                <div class="row">
+                    <!-- Big Column -->
+                    <div class="big-column">
+                        <div class="row">
+                            <!-- Footer Column -->
+                            <div class="footer-column">
+                                <div class="footer-widget contact-widget">
+                                    <h6>Contact Us</h6>
+                                    <div class="text">6Fifth Avenue 5501, Broadway, New York Morris Street London 1234</div>
+                                    <ul class="contact-list">
+                                        <li><span class="icon fas fa-envelope"></span>Your mail @ gmail.com</li>
+                                        <li><span class="icon fas fa-phone-alt"></span>(123) 4567 89000</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Footer Column -->
+                            <div class="footer-column">
+                                <div class="footer-widget links-widget">
+                                    <h6>Useful Links</h6>
+                                    <ul class="footer-list">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="#">Blogs</a></li>
+                                        <li><a href="#">Terms Of Service</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Big Column -->
+                    <div class="big-column">
+                        <div class="row">
+                            <!-- Footer Column -->
+                            <div class="footer-column">
+                                <div class="footer-widget social-widget">
+                                    <h6>Follow Us Now</h6>
+                                    <ul class="social-list">
+                                        <li><a href="#"><span class="icon fab fa-facebook-f"></span>facebook</a></li>
+                                        <li><a href="#"><span class="icon fab fa-twitter"></span>twitter</a></li>
+                                        <li><a href="#"><span class="icon fab fa-instagram"></span>instagram</a></li>
+                                        <li><a href="#"><span class="icon fab fa-dribbble"></span>dribbble</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Footer Column -->
+                            <div class="footer-column">
+                                <div class="footer-widget newsletter-widget">
+                                    <h6>Subscribe</h6>
+                                    <div class="newsletter-form">
+                                        <form method="post" action="#">
+                                            <div class="form-group">
+                                                <input type="email" name="email" value="" placeholder="Your Email" required>
+                                                <button type="submit" class="theme-btn submit-btn">Subscribe Now</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="copyright">&copy; 2025 Bloombiz Careatives All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== Footer post end============= -->
+
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/odometer.min.js"></script>
+    <script src="js/viewport.jquery.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/jquery.nice-number.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+
+<!-- Mirrored from demo.egenslab.com/html/restho/preview/shop-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 May 2025 04:40:06 GMT -->
+</html>
