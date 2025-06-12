@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Milkshakes</title>
+    <title>Life Juice</title>
     <!-- Stylesheets -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -180,17 +180,17 @@
         <section class="page-title" style="background-image: url(images/background/6.jpg)">
             <div class="pattern-layer" style="background-image: url(images/background/pattern-7.png)"></div>
             <div class="auto-container">
-                <h2>Milkshakes</h2>
+                <h2>Life Juice</h2>
                 <ul class="page-breadcrumb">
                     <li><a href="index.html">home</a></li>
-                    <li>Milkshakes</li>
+                    <li>Life Juice</li>
                 </ul>
             </div>
         </section>
         <!-- End Page Title -->
 
-        <!-- Milkshake Section -->
-        <section class="milkshake-section">
+        <!-- Life Juice Section -->
+        <section class="lifejuice-section">
             <div class="icon-layer-one" style="background-image: url(images/icons/icon-1.png)"></div>
             <div class="icon-layer-two" style="background-image: url(images/icons/icon-2.png)"></div>
             <div class="icon-layer-three" style="background-image: url(images/icons/icon-3.png)"></div>
@@ -200,16 +200,16 @@
                         <img src="images/resource/08.jpg" alt="" />
                     </div>
                     <div class="lower-content">
-                        <div class="section-text">yummy</div>
+                        <div class="section-text">refreshing</div>
                         <div class="text">
-                            <p>A milkshake is a sweet drink made by blending milk, ice cream, and flavorings or sweeteners such as butterscotch, caramel sauce, chocolate syrup, fruit syrup, or whole fruit into a thick, sweet, cold mixture. It may also be made using other types of milk such as almond milk, coconut milk, or soy milk.</p>
+                            <p>Life Juice is a vibrant, nutrient-packed beverage made from freshly squeezed fruits and vegetables, designed to energize and nourish your body. Crafted with natural ingredients, it offers a burst of vitamins and minerals without added sugars or preservatives.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Milkshake Section -->
+        <!-- End Life Juice Section -->
 
         <!-- Menus Section -->
         <section class="menus-section style-two">
@@ -219,9 +219,9 @@
             <div class="auto-container">
                 <!-- Sec Title -->
                 <div class="sec-title centered">
-                    <h2 class="main-heading">Explore Our <span>Milkshake Variations</span></h2>
+                    <h2 class="main-heading">Explore Our <span>Life Juice Variations</span></h2>
                     <div class="gradient-underline"></div>
-                    <p class="sub-text">Discover a delightful range of milkshakes crafted to tantalize your taste buds.</p>
+                    <p class="sub-text">Discover a refreshing range of Life Juices crafted to boost your vitality.</p>
                 </div>
 
                 <!-- Loading State -->
@@ -235,11 +235,11 @@
 
                 <!-- Category Tabs -->
                 <div class="category-tabs text-center mb-5">
-                    <ul class="nav nav-tabs justify-content-center subcategory-nav" id="milkshakesTab" role="tablist"></ul>
+                    <ul class="nav nav-tabs justify-content-center subcategory-nav" id="lifejuiceTab" role="tablist"></ul>
                 </div>
 
                 <!-- Tab Content -->
-                <div class="tab-content" id="milkshakesTabContent"></div>
+                <div class="tab-content" id="lifejuiceTabContent"></div>
             </div>
         </section>
         <!-- End Menus Section -->
@@ -442,12 +442,12 @@
                 });
             });
 
-            // --- DYNAMIC MILKSHAKE SECTION ---
+            // --- DYNAMIC LIFE JUICE SECTION ---
             const API_BASE_URL = 'http://localhost:5000/api';
             const loadingDiv = document.getElementById('loading-message');
             const errorDiv = document.getElementById('error-message');
-            const tabList = document.getElementById('milkshakesTab');
-            const tabContent = document.getElementById('milkshakesTabContent');
+            const tabList = document.getElementById('lifejuiceTab');
+            const tabContent = document.getElementById('lifejuiceTabContent');
 
             function showLoading() { 
                 loadingDiv.classList.remove('d-none'); 
@@ -493,7 +493,7 @@
                 container.innerHTML = '';
                 
                 if (!products || products.length === 0) {
-                    container.innerHTML = `<p class="text-center text-muted mt-4">No active milkshakes found in this category.</p>`;
+                    container.innerHTML = `<p class="text-center text-muted mt-4">No active Life Juices found in this category.</p>`;
                     return;
                 }
 
@@ -533,11 +533,11 @@
                                 <div class="menu-image">
                                     <a href="strawberry.html?id=${product._id}">
                                         <img src="${imageUrl}" 
-                                             alt="${product.name || 'Milkshake Image'}" 
+                                             alt="${product.name || 'Life Juice Image'}" 
                                              onerror="this.onerror=null;this.src='images/resource/menu-11.jpg';" />
                                     </a>
                                 </div>
-                                <h6><a href="strawberry.html?id=${product._id}">${product.name || 'Unnamed Milkshake'}</a></h6>
+                                <h6><a href="strawberry.html?id=${product._id}">${product.name || 'Unnamed Life Juice'}</a></h6>
                                 <div class="title">${product.description || 'No description available.'}</div>
                                 <div class="price-box">
                                     <span class="price">$${product.price ? product.price.toFixed(2) : 'N/A'}</span>
@@ -564,11 +564,11 @@
                 hideError();
                 
                 try {
-                    console.log('Starting menu initialization for Milkshake page...');
+                    console.log('Starting menu initialization for Life Juice page...');
                     
-                    // Fetch products assigned to /milkshake.html
-                    const productResponse = await makeApiRequest('/products?active=true&productPageUrl=/milkshake.html');
-                    console.log('Product response for /milkshake.html:', productResponse);
+                    // Fetch products assigned to /lifejuice.html
+                    const productResponse = await makeApiRequest('/products?active=true&productPageUrl=/lifejuice.html');
+                    console.log('Product response for /lifejuice.html:', productResponse);
                     
                     // Handle different response structures for products
                     let allProducts = [];
@@ -581,11 +581,11 @@
                     }
 
                     if (!allProducts || allProducts.length === 0) {
-                        showError('No milkshakes found for this page. Please assign products to the Milkshake page in the admin panel.');
+                        showError('No Life Juices found for this page. Please assign products to the Life Juice page in the admin panel.');
                         return;
                     }
 
-                    console.log(`Found ${allProducts.length} products for /milkshake.html`);
+                    console.log(`Found ${allProducts.length} products for /lifejuice.html`);
 
                     // Group products by category
                     const productsByCategory = {};
@@ -639,7 +639,7 @@
                     const categoriesWithProducts = Object.keys(productsByCategory).map(categoryId => categoryInfo[categoryId]);
 
                     if (categoriesWithProducts.length === 0) {
-                        showError('No categories with milkshakes found for this page.');
+                        showError('No categories with Life Juices found for this page.');
                         return;
                     }
 
@@ -695,7 +695,7 @@
                     
                 } catch (err) {
                     console.error('Menu initialization failed:', err);
-                    showError(`Failed to load milkshakes: ${err.message}. Please ensure the server is running and accessible.`);
+                    showError(`Failed to load Life Juices: ${err.message}. Please ensure the server is running and accessible.`);
                 } finally {
                     hideLoading();
                 }

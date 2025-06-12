@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Milkshakes</title>
+    <title>Fruitfraps</title>
     <!-- Stylesheets -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -31,7 +31,7 @@
                         <!-- Mobile Navigation Toggler -->
                         <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
                         <!-- Main Menu -->
-                       						<nav class="main-menu navbar-expand-md">
+                        						<nav class="main-menu navbar-expand-md">
 							<div class="navbar-header">
 								<!-- Toggle Button -->
 								<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -180,16 +180,16 @@
         <section class="page-title" style="background-image: url(images/background/6.jpg)">
             <div class="pattern-layer" style="background-image: url(images/background/pattern-7.png)"></div>
             <div class="auto-container">
-                <h2>Milkshakes</h2>
+                <h2>Fruitfraps</h2>
                 <ul class="page-breadcrumb">
                     <li><a href="index.html">home</a></li>
-                    <li>Milkshakes</li>
+                    <li>Fruitfraps</li>
                 </ul>
             </div>
         </section>
         <!-- End Page Title -->
 
-        <!-- Milkshake Section -->
+        <!-- Fruitfrap Section -->
         <section class="milkshake-section">
             <div class="icon-layer-one" style="background-image: url(images/icons/icon-1.png)"></div>
             <div class="icon-layer-two" style="background-image: url(images/icons/icon-2.png)"></div>
@@ -197,19 +197,19 @@
             <div class="auto-container">
                 <div class="inner-container">
                     <div class="big-image">
-                        <img src="images/resource/08.jpg" alt="" />
+                        <img src="images/resource/08.jpg" alt="Fruitfrap" />
                     </div>
                     <div class="lower-content">
                         <div class="section-text">yummy</div>
                         <div class="text">
-                            <p>A milkshake is a sweet drink made by blending milk, ice cream, and flavorings or sweeteners such as butterscotch, caramel sauce, chocolate syrup, fruit syrup, or whole fruit into a thick, sweet, cold mixture. It may also be made using other types of milk such as almond milk, coconut milk, or soy milk.</p>
+                            <p>A fruitfrap is a sweet drink made by blending milk, ice cream, and flavorings or sweeteners such as butterscotch, caramel sauce, chocolate syrup, fruit syrup, or whole fruit into a thick, sweet, cold mixture. It may also be made using other types of milk such as almond milk, coconut milk, or soy milk.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End Milkshake Section -->
+        <!-- End Fruitfrap Section -->
 
         <!-- Menus Section -->
         <section class="menus-section style-two">
@@ -219,13 +219,13 @@
             <div class="auto-container">
                 <!-- Sec Title -->
                 <div class="sec-title centered">
-                    <h2 class="main-heading">Explore Our <span>Milkshake Variations</span></h2>
+                    <h2 class="main-heading">Explore Our <span>Fruitfrap Variations</span></h2>
                     <div class="gradient-underline"></div>
-                    <p class="sub-text">Discover a delightful range of milkshakes crafted to tantalize your taste buds.</p>
+                    <p class="sub-text">Discover a delightful range of fruitfraps crafted to tantalize your taste buds.</p>
                 </div>
 
                 <!-- Loading State -->
-                <div id="loading-message" class="text-center mb-4 d-none">
+                <div id="_loading-message" class="text-center mb-4 d-none">
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                     Loading...
                 </div>
@@ -235,11 +235,11 @@
 
                 <!-- Category Tabs -->
                 <div class="category-tabs text-center mb-5">
-                    <ul class="nav nav-tabs justify-content-center subcategory-nav" id="milkshakesTab" role="tablist"></ul>
+                    <ul class="nav nav-tabs justify-content-center subcategory-nav" id="fruitfrapsTab" role="tablist"></ul>
                 </div>
 
                 <!-- Tab Content -->
-                <div class="tab-content" id="milkshakesTabContent"></div>
+                <div class="tab-content" id="fruitfrapsTabContent"></div>
             </div>
         </section>
         <!-- End Menus Section -->
@@ -442,30 +442,32 @@
                 });
             });
 
-            // --- DYNAMIC MILKSHAKE SECTION ---
+            // --- DYNAMIC FRUITFRAP SECTION ---
             const API_BASE_URL = 'http://localhost:5000/api';
-            const loadingDiv = document.getElementById('loading-message');
+            const loadingDiv = document.getElementById('_loading-message');
             const errorDiv = document.getElementById('error-message');
-            const tabList = document.getElementById('milkshakesTab');
-            const tabContent = document.getElementById('milkshakesTabContent');
+            const tabList = document.getElementById('fruitfrapsTab');
+            const tabContent = document.getElementById('fruitfrapsTabContent');
 
             function showLoading() { 
-                loadingDiv.classList.remove('d-none'); 
+                if (loadingDiv) loadingDiv.classList.remove('d-none'); 
             }
             
             function hideLoading() { 
-                loadingDiv.classList.add('d-none'); 
+                if (loadingDiv) loadingDiv.classList.add('d-none'); 
             }
 
             function showError(message) {
                 hideLoading();
-                errorDiv.textContent = message;
-                errorDiv.classList.remove('d-none');
-                console.error('Error Displayed:', message);
+                if (errorDiv) {
+                    errorDiv.textContent = message;
+                    errorDiv.classList.remove('d-none');
+                }
+                console.error('Error:', message);
             }
             
             function hideError() { 
-                errorDiv.classList.add('d-none'); 
+                if (errorDiv) errorDiv.classList.add('d-none'); 
             }
 
             async function makeApiRequest(endpoint) {
@@ -480,7 +482,7 @@
                     }
                     
                     const data = await response.json();
-                    console.log(`Successfully received data for ${endpoint}:`, data);
+                    console.log(`Received data for ${endpoint}:`, data);
                     return data;
                 } catch (err) {
                     console.error(`API request to ${endpoint} failed:`, err);
@@ -489,11 +491,10 @@
             }
 
             function renderProducts(products, container) {
-                // Clear the container first
                 container.innerHTML = '';
                 
                 if (!products || products.length === 0) {
-                    container.innerHTML = `<p class="text-center text-muted mt-4">No active milkshakes found in this category.</p>`;
+                    container.innerHTML = `<p class="text-center text-muted mt-4">No active fruitfraps found in this category.</p>`;
                     return;
                 }
 
@@ -513,18 +514,10 @@
                 rightColumn.appendChild(rightInner);
                 
                 products.forEach((product, index) => {
-                    // Better image URL handling
-                    let imageUrl = 'images/resource/menu-11.jpg'; // Default fallback image
-                    
+                    let imageUrl = 'images/resource/menu-11.jpg'; // Default fallback
                     if (product.images && product.images.length > 0) {
                         const firstImage = product.images[0];
-                        if (firstImage.startsWith('http')) {
-                            imageUrl = firstImage;
-                        } else {
-                            // Remove any leading slashes to avoid double slashes
-                            const cleanPath = firstImage.replace(/^\/+/, '');
-                            imageUrl = `${API_BASE_URL}/${cleanPath}`;
-                        }
+                        imageUrl = firstImage.startsWith('http') ? firstImage : `${API_BASE_URL}/${firstImage.replace(/^\/+/, '')}`;
                     }
 
                     const productHtml = `
@@ -533,11 +526,11 @@
                                 <div class="menu-image">
                                     <a href="strawberry.html?id=${product._id}">
                                         <img src="${imageUrl}" 
-                                             alt="${product.name || 'Milkshake Image'}" 
+                                             alt="${product.name || 'Fruitfrap'}" 
                                              onerror="this.onerror=null;this.src='images/resource/menu-11.jpg';" />
                                     </a>
                                 </div>
-                                <h6><a href="strawberry.html?id=${product._id}">${product.name || 'Unnamed Milkshake'}</a></h6>
+                                <h6><a href="strawberry.html?id=${product._id}">${product.name || 'Unnamed Fruitfrap'}</a></h6>
                                 <div class="title">${product.description || 'No description available.'}</div>
                                 <div class="price-box">
                                     <span class="price">$${product.price ? product.price.toFixed(2) : 'N/A'}</span>
@@ -546,7 +539,6 @@
                         </div>
                     `;
                     
-                    // Alternate between left and right columns
                     if (index % 2 === 0) {
                         leftInner.innerHTML += productHtml;
                     } else {
@@ -564,13 +556,12 @@
                 hideError();
                 
                 try {
-                    console.log('Starting menu initialization for Milkshake page...');
+                    console.log('Initializing Fruitfraps menu...');
                     
-                    // Fetch products assigned to /milkshake.html
-                    const productResponse = await makeApiRequest('/products?active=true&productPageUrl=/milkshake.html');
-                    console.log('Product response for /milkshake.html:', productResponse);
+                    // Fetch products assigned to /frootfraps.html
+                    const productResponse = await makeApiRequest('/products?active=true&productPageUrl=/frootfraps.html');
+                    console.log('Product response:', productResponse);
                     
-                    // Handle different response structures for products
                     let allProducts = [];
                     if (Array.isArray(productResponse)) {
                         allProducts = productResponse;
@@ -581,75 +572,59 @@
                     }
 
                     if (!allProducts || allProducts.length === 0) {
-                        showError('No milkshakes found for this page. Please assign products to the Milkshake page in the admin panel.');
+                        showError('No fruitfraps found. Please assign products to the Fruitfraps page in the admin panel.');
                         return;
                     }
 
-                    console.log(`Found ${allProducts.length} products for /milkshake.html`);
+                    console.log(`Found ${allProducts.length} products`);
 
                     // Group products by category
                     const productsByCategory = {};
                     const categoryInfo = {};
 
                     allProducts.forEach(product => {
-                        // Skip Smoothie Bowls category
                         let categoryId, categoryName;
-                        
                         if (product.category) {
                             if (typeof product.category === 'object') {
                                 categoryId = product.category._id;
                                 categoryName = product.category.name;
                             } else {
                                 categoryId = product.category;
-                                categoryName = product.categoryName || 'Unknown Category';
+                                categoryName = product.categoryName || 'Uncategorized';
                             }
                         } else if (product.categoryId) {
                             categoryId = product.categoryId;
-                            categoryName = product.categoryName || 'Unknown Category';
+                            categoryName = product.categoryName || 'Uncategorized';
                         } else {
-                            console.warn('Product missing category information:', product);
-                            return; // Skip products without category
-                        }
-
-                        // Skip if category is "Smoothie Bowls"
-                        if (categoryName.toLowerCase() === 'smoothie bowls') {
-                            console.log(`Skipping product in "Smoothie Bowls" category: ${product.name}`);
+                            console.warn('Product missing category:', product);
                             return;
                         }
 
-                        // Store category info
                         if (!categoryInfo[categoryId]) {
-                            categoryInfo[categoryId] = {
-                                _id: categoryId,
-                                name: categoryName
-                            };
+                            categoryInfo[categoryId] = { _id: categoryId, name: categoryName };
                         }
 
-                        // Group products by category
                         if (!productsByCategory[categoryId]) {
                             productsByCategory[categoryId] = [];
                         }
                         productsByCategory[categoryId].push(product);
                     });
 
-                    console.log('Products grouped by category:', productsByCategory);
-                    console.log('Category info:', categoryInfo);
+                    console.log('Products by category:', productsByCategory);
+                    console.log('Categories:', categoryInfo);
 
-                    // Get unique categories that have products
                     const categoriesWithProducts = Object.keys(productsByCategory).map(categoryId => categoryInfo[categoryId]);
 
                     if (categoriesWithProducts.length === 0) {
-                        showError('No categories with milkshakes found for this page.');
+                        showError('No categories with active fruitfraps found.');
                         return;
                     }
 
-                    console.log(`Found ${categoriesWithProducts.length} categories with products:`, categoriesWithProducts.map(c => c.name));
-                    
                     // Clear existing content
                     tabList.innerHTML = '';
                     tabContent.innerHTML = '';
                     
-                    // Create tabs for each category that has products
+                    // Render tabs and content
                     categoriesWithProducts.forEach((category, index) => {
                         const categoryId = category._id;
                         const categoryName = category.name;
@@ -657,7 +632,7 @@
                         const tabId = `tab-${categoryId}`;
                         const paneId = `pane-${categoryId}`;
 
-                        // Create tab button
+                        // Create tab
                         const tabItem = document.createElement('li');
                         tabItem.className = 'nav-item';
                         tabItem.setAttribute('role', 'presentation');
@@ -676,7 +651,7 @@
                         tabItem.appendChild(tabButton);
                         tabList.appendChild(tabItem);
                         
-                        // Create tab pane with products
+                        // Create tab pane
                         const tabPane = document.createElement('div');
                         tabPane.className = `tab-pane fade ${isActive ? 'show active' : ''}`;
                         tabPane.id = paneId;
@@ -685,29 +660,29 @@
                         
                         tabContent.appendChild(tabPane);
 
-                        // Render products for this category
+                        // Render products
                         const categoryProducts = productsByCategory[categoryId] || [];
-                        console.log(`Rendering ${categoryProducts.length} products for category "${categoryName}"`);
+                        console.log(`Rendering ${categoryProducts.length} products for "${categoryName}"`);
                         renderProducts(categoryProducts, tabPane);
                     });
                     
-                    console.log('Menu initialization completed successfully');
+                    console.log('Menu initialized successfully');
                     
                 } catch (err) {
                     console.error('Menu initialization failed:', err);
-                    showError(`Failed to load milkshakes: ${err.message}. Please ensure the server is running and accessible.`);
+                    showError(`Failed to load fruitfraps: ${err.message}. Please check the server connection.`);
                 } finally {
                     hideLoading();
                 }
             }
 
-            // Listen for product updates (if you have real-time updates)
+            // Listen for product updates
             window.addEventListener('productUpdated', () => {
-                console.log('Product update detected! Refreshing menu...');
+                console.log('Product update detected. Refreshing menu...');
                 initializeMenu();
             });
 
-            // Initialize the menu when page loads
+            // Initialize menu
             initializeMenu();
         });
         </script>
@@ -786,7 +761,7 @@
                 transition: all 0.3s ease;
                 box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
                 text-transform: capitalize;
-                max-width: 200px; /* Prevent overly long text */
+                max-width: 200px;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;

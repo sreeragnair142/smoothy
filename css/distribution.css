@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FFF8E6;
+}
+
+.distribution-container {
+  position: relative;
+  padding: 100px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.heading h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.heading h1 {
+  font-size: 40px;
+  color: #F43F5E;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #F43F5E;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e03453;
+}
+
+.decorative-img {
+  position: absolute;
+  width: 60px;
+  z-index: 1;
+}
+
+.decorative-img.left {
+  top: 40%;
+  left: 0;
+}
+
+.decorative-img.right {
+  top: 20px;
+  right: 0;
+}
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: white;
+}
+
+.why-distributor {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.title .highlight {
+  color: #2baf74;
+  font-family: "Pacifico", cursive;
+  font-weight: normal;
+}
+
+.benefits-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.benefit-card {
+  width: 320px;
+  height: 320px;
+  border: 3px solid;
+  border-radius: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease;
+  background: #fff;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.benefit-card p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.benefit-card img {
+  width: 40px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.purple {
+  border-color: #b68ee3;
+}
+
+.blue {
+  border-color: #7ad3e0;
+}
+
+.green {
+  border-color: #3caa3c;
+}
+
+@media screen and (max-width: 768px) {
+  .benefits-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

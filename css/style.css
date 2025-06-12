@@ -241,7 +241,7 @@
 .banner-section .slide{
 	position:relative;
 	overflow:hidden;
-	padding-top:150px;
+	padding-top:213px;
 	padding-bottom:0px;
 	background-color:#beb996;
 }
@@ -7514,3 +7514,32 @@
 
 
   
+
+   .navigation .dropdown-menu {
+                min-width: 180px !important;
+                width: auto !important;
+                max-width: 200px !important;
+            }
+            .navigation .dropdown-menu > li > a {
+                padding: 13px 15px !important;
+                font-size: 13px !important;
+                line-height: 1.2 !important;
+            }
+            .navigation .dropdown-menu {
+                padding: 5px 0 !important;
+            }
+            .navigation li:nth-child(3) .dropdown-menu {
+                min-width: 160px !important;
+            }
+            .menu-image img {
+                width: 100%;
+                object-fit: cover;
+            }
+            #loading-message {
+                padding: 20px;
+                font-size: 18px;
+                color: #333;
+            }
+            .d-none {
+                display: none !important;
+            }
