@@ -3,11 +3,12 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>isoothies | News Detail</title>
+	<title>isoothies | Protein Shake Vending Machine</title>
 	<!-- Stylesheets -->
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/vending.css" rel="stylesheet">
 
 	<link
 		href="https://fonts.googleapis.com/css2?family=Niconne&amp;family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;family=Tangerine:wght@400;700&amp;display=swap"
@@ -19,24 +20,18 @@
 	<!-- Responsive -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-
 </head>
 
 <body>
-
 	<div class="page-wrapper">
-
 		<!-- Preloader -->
 		<div class="preloader"></div>
 
 		<!-- Main Header-->
 		<header class="main-header header-style-one">
-
 			<!-- Header Upper -->
 			<div class="header-upper">
 				<div class="auto-container clearfix">
-
 					<div class="pull-left logo-box">
 						<div class="logo"><a href="index.html"><img src="images/smoothie logo web white.png" alt=""
 									title=""></a></div>
@@ -60,29 +55,9 @@
 
 							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 								<ul class="navigation clearfix">
-									<li class=""><a href="index.html">Home</a>
-										<!-- <ul>
-										<li><a href="index-2.html">Homepage One</a></li>
-										<li><a href="index-3.html">Homepage Two</a></li>
-										<li><a href="index-4.html">Homepage Three</a></li>
-										<li><a href="index-5.html">Homepage Four</a></li>
-										<li class="dropdown"><a href="#">Header Styles</a>
-											<ul>
-												<li><a href="index-2.html">Header Style One</a></li>
-												<li><a href="index-3.html">Header Style Two</a></li>
-												<li><a href="index-4.html">Header Style Three</a></li>
-												<li><a href="index-4.html">Header Style Four</a></li>
-											</ul>
-										</li>
-									</ul> -->
-									</li>
+									<li class=""><a href="index.html">Home</a></li>
 									<li class="dropdown">
 										<a href="about.html" class="" data-toggle="dropdown">About</a>
-										<!-- <ul class="dropdown-menu">
-											<li><a href="about.html">About Us</a></li>
-											<li><a href="team.html">Team</a></li>
-											<li><a href="restaurant.html">Restaurant</a></li>
-										</ul> -->
 									</li>
 									<li class="dropdown">
 										<a href="menu.html" class="" data-toggle="dropdown">Menu</a>
@@ -96,12 +71,13 @@
 									</li>
 									<li class="dropdown">
 										<a href="gallery.html" class="" data-toggle="dropdown">Gallery</a>
-
 									</li>
 									<li class="dropdown">
 										<a href="blog-classic.html" class="" data-toggle="dropdown">Blog</a>
-
 									</li>
+									<li class="dropdown"><a href="vendingmachine.html"
+											data-toggle="dropdown">Vendingmachine</a>
+
 									<li><a href="contact.html">Contact us</a></li>
 								</ul>
 							</div>
@@ -109,16 +85,10 @@
 
 						<!-- Main Menu End-->
 						<div class="outer-box clearfix">
-
-							<!-- Search Btn -->
-							<!-- <div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span></div> -->
-
 							<!-- Nav Btn -->
 							<div class="nav-btn navSidebar-button"><span class="icon flaticon-menu-2"></span></div>
-
 						</div>
 					</div>
-
 				</div>
 			</div>
 			<!--End Header Upper-->
@@ -140,15 +110,9 @@
 
 						<!-- Main Menu End-->
 						<div class="outer-box clearfix">
-
-							<!-- Search Btn -->
-							<!-- <div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span></div> -->
-
 							<!-- Nav Btn -->
 							<div class="nav-btn navSidebar-button"><span class="icon flaticon-menu-2"></span></div>
-
 						</div>
-
 					</div>
 				</div>
 			</div><!-- End Sticky Menu -->
@@ -162,32 +126,11 @@
 					<div class="nav-logo"><a href="index.html"><img src="images/smoothie logo web (1).png"
 								style="height: 60px;" alt="" title=""></a></div>
 					<div class="menu-outer">
-						<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+						<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+					</div>
 				</nav>
 			</div><!-- End Mobile Menu -->
-
 		</header>
-
-		<!-- Add this JavaScript code below your header or in your main JavaScript file -->
-		<script>
-	document.addEventListener('DOMContentLoaded', function() {
-		// Handle direct navigation for dropdown parent items
-		const dropdownParents = document.querySelectorAll('.dropdown > a');
-		
-		dropdownParents.forEach(function(parentLink) {
-			parentLink.addEventListener('click', function(e) {
-				// Check if link has a real href value (not just '#')
-				const href = this.getAttribute('href');
-				if (href && href !== '#') {
-					// Navigate directly to the href if it's a real URL
-					window.location.href = href;
-					e.preventDefault();
-				}
-			});
-		});
-	});
-		</script>
-		<!-- End Main Header -->
 
 		<!-- Sidebar Cart Item -->
 		<div class="xs-sidebar-group info-group">
@@ -195,12 +138,9 @@
 			<div class="xs-sidebar-widget">
 				<div class="sidebar-widget-container">
 					<div class="widget-heading">
-						<a href="#" class="close-side-widget">
-							X
-						</a>
+						<a href="#" class="close-side-widget">X</a>
 					</div>
 					<div class="sidebar-textwidget">
-
 						<!-- Sidebar Info Content -->
 						<div class="sidebar-info-contents">
 							<div class="content-inner">
@@ -211,7 +151,7 @@
 									<h2>About Us</h2>
 									<p class="text">The argument in favor of using filler text goes something like this:
 										If you use real content in the Consulting Process, anytime you reach a review
-										point you’ll end up reviewing and negotiating the content itself and not the
+										point you'll end up reviewing and negotiating the content itself and not the
 										design.</p>
 									<a href="contact.html" class="theme-btn btn-style-one clearfix"><span
 											class="icon"></span>Consultation</a>
@@ -237,7 +177,6 @@
 								</ul>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -245,591 +184,705 @@
 		<!-- END sidebar widget item -->
 
 		<!-- Page Title -->
-		<section class="page-title" style="background-image: url(images/background/6.jpg)">
-			<div class="pattern-layer" style="background-image: url(images/background/pattern-7.png)"></div>
+		<section class="page-title"
+			style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(10, 10, 10, 0.9)), url('images/vending-dark.jpg') center/cover no-repeat;">
 			<div class="auto-container">
-				<h2>Broad bean and goats’ cheese <br> bruschetta</h2>
-				<ul class="page-breadcrumb">
-					<li><a href="index-2.html">home</a></li>
-					<li>Blog Detail</li>
+				<h2 style="color: #fff;">Protein Shake Vending Machine</h2>
+				<ul class="page-breadcrumb" style="color: #ccc;">
+					<li><a href="index.html" style="color: #aaa;">home</a></li>
+					<li>Protein Shake</li>
 				</ul>
 			</div>
 		</section>
+
 		<!-- End Page Title -->
 
-		<!-- Sidebar Page Container -->
-		<div class="sidebar-page-container">
-			<div class="section-text">yummy</div>
-			<div class="icon-layer-one" style="background-image: url(images/icons/icon-1.png)"></div>
-			<div class="icon-layer-two" style="background-image: url(images/icons/icon-2.png)"></div>
-			<div class="icon-layer-three" style="background-image: url(images/icons/icon-3.png)"></div>
+
+
+
+		<section class="protein-hero-section">
+			<!-- Background Image -->
+			<div class="hero-background"></div>
+
+			<!-- Overlay -->
+			<div class="hero-overlay"></div>
+
+			<!-- Floating Particles -->
+			<div class="particles">
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+				<div class="particle"></div>
+			</div>
+
+			<!-- Main Content -->
+			<div class="hero-content">
+				<h1 class="hero-title">Protein Shake</h1>
+				<p class="hero-subtitle">Premium Quality • Maximum Results</p>
+			</div>
+
+			<!-- Scroll Indicator -->
+		</section>
+		<!-- Protein Shake Section -->
+
+		<section class="protein-shake-section">
 			<div class="auto-container">
-				<div class="row clearfix">
+				<div class="row">
+					<!-- Left Column - Vending Machine Image -->
+					<div class="col-lg-6 col-md-12">
+						<div class="image-wrapper">
+							<img src="images/vendin1.png" alt="Protein Shake Vending Machine"
+								class="vending-machine-image">
+						</div>
+					</div>
 
-					<!-- Content Side -->
-					<div class="content-side col-lg-8 col-md-12 col-sm-12">
-						<div class="blog-detail">
-							<div class="inner-box">
-								<ul class="post-info">
-									<li>May 21, 2021</li>
-									<li>2 Comments</li>
-									<li><a href="news-detail.html">Share</a></li>
-								</ul>
-								<div class="image">
-									<img src="images/resource/news-21.jpg" alt="" />
-								</div>
-								<div class="lower-content">
-									<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-										bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
-										sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsannec
-										sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
-										amet velit.</p>
-									<p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
-										consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per
-										conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu
-										felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet
-										nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
-										feugiat.</p>
-									<blockquote>
-										Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-										bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
-										sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsannec
-										sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
-										amet velit.
-									</blockquote>
-									<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-										bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
-										sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsannec
-										sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
-										amet velit.</p>
-									<p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
-										consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per
-										conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu
-										felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet
-										nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
-										feugiat.</p>
-									<!-- Post Share Options-->
-									<div class="post-share-options">
-										<ul class="tags">
-											<li><span class="icon fa fa-tag"></span></li>
-											<li><a href="#">Colorful</a></li>
-											<li><a href="#">Fruit Bowl</a></li>
-											<li><a href="#">Healthy</a></li>
-											<li><a href="#">Ice Cream</a></li>
-											<li><a href="#">Mixed Shakes</a></li>
-											<li><a href="#">Smoothie</a></li>
-										</ul>
+					<!-- Right Column - Statistics -->
+					<div class="col-lg-6 col-md-12">
+						<div class="stats-wrapper">
+							<div class="stats-card">
+								<div class="stats-content">
+									<h3>For protein shake</h3>
+									<div class="percentage">96%</div>
+									<div class="stats-text">of people choose</div>
+									<div class="features">
+										<span>Big capacity,</span>
+										<span>Independent stirring system</span>
 									</div>
-								</div>
-								<!-- Author Box -->
-								<div class="author-box">
-									<div class="box-inner">
-										<div class="content">
-											<div class="author-image">
-												<img src="images/resource/author-3.jpg" alt="" />
-											</div>
-											<h6>Amy Burton</h6>
-											<div class="text">Proin gravida nibh vel velit auctor aliquet. Aenean
-												sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- End Author Box -->
-
-								<!-- Comments Area -->
-								<div class="comments-area">
-									<div class="group-title">
-										<h4>2 Comments</h4>
-									</div>
-
-									<div class="comment-box">
-										<div class="comment">
-											<div class="author-thumb"><img src="images/resource/author-4.jpg" alt="">
-											</div>
-											<div class="comment-info clearfix"><strong>Nikol</strong>
-												<div class="comment-time">7 months ago </div>
-											</div>
-											<div class="text">Proin gravida nibh vel velit auctor aliquet. Aenean
-												sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.
-											</div>
-											<a class="theme-btn reply-btn" href="#"><span
-													class="fa fa-mail-reply"></span> Reply</a>
-										</div>
-									</div>
-
-									<div class="comment-box reply-comment">
-										<div class="comment">
-											<div class="author-thumb"><img src="images/resource/author-5.jpg" alt="">
-											</div>
-											<div class="comment-info clearfix"><strong>Randow</strong>
-												<div class="comment-time">7 months ago </div>
-											</div>
-											<div class="text">Proin gravida nibh vel velit auctor aliquet. Aenean
-												sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.
-											</div>
-											<a class="theme-btn reply-btn" href="#"><span
-													class="fa fa-mail-reply"></span> Reply</a>
-										</div>
-									</div>
-
-								</div>
-
-								<!-- Comment Form -->
-								<div class="comment-form-box">
-									<div class="group-title">
-										<h4>Leave a Reply</h4>
-										<div class="comment-text">Your email address will not be published. Required
-											fields are marked *</div>
-									</div>
-
-									<!-- Comment Form -->
-									<div class="comment-form">
-										<!-- Contact Form -->
-										<form method="post"
-											action="https://preview.designtone.xyz/html/foodily/blog.html">
-											<div class="row clearfix">
-
-												<div class="form-group col-lg-12 col-md-12 col-sm-12">
-													<textarea name="message" placeholder="Your Comment"></textarea>
-												</div>
-
-												<div class="form-group col-lg-6 col-md-6 col-sm-12">
-													<input type="text" name="username" placeholder="Your Name" required>
-												</div>
-
-												<div class="form-group col-lg-6 col-md-6 col-sm-12">
-													<input type="email" name="email" placeholder="Your Email" required>
-												</div>
-
-												<div class="form-group col-lg-12 col-md-12 col-sm-12">
-													<input type="text" name="subject" placeholder="Subject" required>
-												</div>
-
-												<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
-													<div class="check-box"><input type="checkbox" name="shipping-option"
-															id="account-option"> &ensp; <label for="account-option">Save
-															my name, email, and website in this browser for the next
-															time I comment.</label></div>
-												</div>
-
-												<div class="form-group col-lg-12 col-md-12 col-sm-12">
-													<button type="submit" class="theme-btn btn-style-one clearfix"><span
-															class="icon"></span>Post Comment</button>
-												</div>
-
-											</div>
-										</form>
-										<!-- Contact Form -->
-									</div>
-
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
 
-					<!-- Sidebar Side -->
-					<div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
-						<aside class="sidebar sticky-top">
 
-							<!-- Search -->
-							<div class="sidebar-widget search-box">
-								<div class="sidebar-title">
-									<h6>Search Course</h6>
-								</div>
-								<form method="post" action="https://preview.designtone.xyz/html/foodily/contact.html">
-									<div class="form-group">
-										<input type="search" name="search-field" value="" placeholder="Your search"
-											required>
-										<button type="submit"><span class="icon fa fa-search"></span></button>
-									</div>
-								</form>
-							</div>
 
-							<!-- About Widget -->
-							<div class="sidebar-widget about-widget">
-								<div class="widget-content">
-									<div class="sidebar-title">
-										<h6>About us</h6>
-									</div>
-									<div class="text">Pellentesque semper ut sem non aliquet. Nullam tincidunt
-										vestibulum condimentum. Duis at mollis orci. Nulla facilisi. Pellentesque in mi
-										ut diam consequat sollicitudin</div>
-								</div>
-							</div>
+		<div class="cases-section">
+			<div class="cases-header">
+				<h1 class="cases-title">Cases</h1>
+			</div>
 
-							<!-- Category Widget -->
-							<div class="sidebar-widget category-widget">
-								<div class="widget-content">
-									<div class="sidebar-title">
-										<h6>Product categories</h6>
-									</div>
-									<ul class="cat-list">
-										<li><a href="#">Colorful</a></li>
-										<li><a href="#">Fruit Bowl</a></li>
-										<li><a href="#">Healthy</a></li>
-										<li><a href="#">Ice Cream</a></li>
-										<li><a href="#">Mixed</a></li>
-										<li><a href="#">Shakes</a></li>
-										<li><a href="#">Smoothie</a></li>
-									</ul>
-								</div>
-							</div>
+			<div class="cases-grid">
+				<div class="case-item">
+					<div class="case-image"></div>
+				</div>
 
-							<!-- Popular Posts -->
-							<div class="sidebar-widget popular-posts">
-								<div class="widget-content">
-									<div class="sidebar-title">
-										<h6>Products</h6>
-									</div>
+				<div class="case-item">
+					<div class="case-image"></div>
+				</div>
 
-									<article class="post">
-										<figure class="post-thumb"><img src="images/resource/post-thumb-1.jpg" alt=""><a
-												href="news-detail.html" class="overlay-box"><span
-													class="icon fa fa-link"></span></a></figure>
-										<div class="text"><a href="news-detail.html">Hippie Chick</a></div>
-										<div class="post-info">$120</div>
-									</article>
+				<div class="case-item">
+					<div class="case-image"></div>
+				</div>
 
-									<article class="post">
-										<figure class="post-thumb"><img src="images/resource/post-thumb-2.jpg" alt=""><a
-												href="news-detail.html" class="overlay-box"><span
-													class="icon fa fa-link"></span></a></figure>
-										<div class="text"><a href="news-detail.html">Hippie Chick</a></div>
-										<div class="post-info">$120</div>
-									</article>
+				<div class="case-item">
+					<div class="case-image"></div>
+				</div>
 
-									<article class="post">
-										<figure class="post-thumb"><img src="images/resource/post-thumb-3.jpg" alt=""><a
-												href="news-detail.html" class="overlay-box"><span
-													class="icon fa fa-link"></span></a></figure>
-										<div class="text"><a href="news-detail.html">Hippie Chick</a></div>
-										<div class="post-info">$120</div>
-									</article>
+				<div class="case-item">
+					<div class="case-image"></div>
+				</div>
 
-								</div>
-							</div>
+				<div class="case-item">
+					<div class="case-image"></div>
+				</div>
 
-							<!-- Tags Posts -->
-							<div class="sidebar-widget tags-posts">
-								<div class="widget-content">
-									<div class="sidebar-title">
-										<h6>Product tags</h6>
-									</div>
-									<ul class="tag-list clearfix">
-										<li><a href="#">Colorful</a></li>
-										<li><a href="#">Fruit Bowl</a></li>
-										<li><a href="#">Healthy</a></li>
-										<li><a href="#">Ice Cream</a></li>
-										<li><a href="#">Mixed</a></li>
-										<li><a href="#">Shakes</a></li>
-										<li><a href="#">Smoothie</a></li>
-									</ul>
-								</div>
-							</div>
+				<div class="case-item">
+					<div class="case-image"></div>
+				</div>
 
-							<!-- Social Widget -->
-							<div class="sidebar-widget social-widget">
-								<div class="sidebar-title">
-									<h6>Share</h6>
-								</div>
-								<ul class="social-list">
-									<li><a href="#"><span class="icon fa fa-facebook"></span></a></li>
-									<li><a href="#"><span class="icon fa fa-twitter"></span></a></li>
-									<li><a href="#"><span class="icon fa fa-instagram"></span></a></li>
-									<li><a href="#"><span class="icon fa fa-dribbble"></span></a></li>
-								</ul>
-							</div>
-
-						</aside>
-					</div>
-
+				<div class="case-item">
+					<div class="case-image"></div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Gallery Section -->
-		<section class="gallery-section">
-			<div class="outer-container">
-				<div class="gallery-carousel owl-carousel owl-theme">
 
-					<!-- Gallery Block -->
-					<div class="gallery-block">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/1.jpg" alt="">
-								<!-- Overlay Box -->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="images/gallery/1.jpg" data-fancybox="gallery" data-caption=""
-												class="icon flaticon-plus"></a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
+		<!-- core functions -->
+
+
+
+
+
+
+
+
+
+		<div class="core-functions-section">
+			<div class="section-header">
+				<h1 class="section-title">Core Functions</h1>
+			</div>
+
+			<div class="functions-grid">
+				<div class="function-item">
+					<div class="function-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+							<path
+								d="M12 2C8.69 2 6 4.69 6 8s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" />
+							<path d="M21 19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2v-3c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v3z" />
+							<path d="M7 16h2v2H7zm4 0h2v2h-2z" />
+						</svg>
 					</div>
-
-					<!-- Gallery Block -->
-					<div class="gallery-block">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/2.jpg" alt="">
-								<!-- Overlay Box -->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="images/gallery/2.jpg" data-fancybox="gallery" data-caption=""
-												class="icon flaticon-plus"></a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-
-					<!-- Gallery Block -->
-					<div class="gallery-block">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/3.jpg" alt="">
-								<!-- Overlay Box -->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="images/gallery/3.jpg" data-fancybox="gallery" data-caption=""
-												class="icon flaticon-plus"></a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-
-					<!-- Gallery Block -->
-					<div class="gallery-block">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/4.jpg" alt="">
-								<!-- Overlay Box -->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="images/gallery/4.jpg" data-fancybox="gallery" data-caption=""
-												class="icon flaticon-plus"></a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-
-					<!-- Gallery Block -->
-					<div class="gallery-block">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/5.jpg" alt="">
-								<!-- Overlay Box -->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="images/gallery/5.jpg" data-fancybox="gallery" data-caption=""
-												class="icon flaticon-plus"></a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-
-					<!-- Gallery Block -->
-					<div class="gallery-block">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/1.jpg" alt="">
-								<!-- Overlay Box -->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="images/gallery/1.jpg" data-fancybox="gallery" data-caption=""
-												class="icon flaticon-plus"></a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-
-					<!-- Gallery Block -->
-					<div class="gallery-block">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/2.jpg" alt="">
-								<!-- Overlay Box -->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="images/gallery/2.jpg" data-fancybox="gallery" data-caption=""
-												class="icon flaticon-plus"></a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-
-					<!-- Gallery Block -->
-					<div class="gallery-block">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/3.jpg" alt="">
-								<!-- Overlay Box -->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="images/gallery/3.jpg" data-fancybox="gallery" data-caption=""
-												class="icon flaticon-plus"></a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-
-					<!-- Gallery Block -->
-					<div class="gallery-block">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/4.jpg" alt="">
-								<!-- Overlay Box -->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="images/gallery/4.jpg" data-fancybox="gallery" data-caption=""
-												class="icon flaticon-plus"></a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-
-					<!-- Gallery Block -->
-					<div class="gallery-block">
-						<div class="inner-box">
-							<figure class="image-box">
-								<img src="images/gallery/5.jpg" alt="">
-								<!-- Overlay Box -->
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<a href="images/gallery/5.jpg" data-fancybox="gallery" data-caption=""
-												class="icon flaticon-plus"></a>
-										</div>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-
+					<h3 class="function-title">Hot and cold<br>dual temperature</h3>
 				</div>
+
+				<div class="function-item">
+					<div class="function-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+							<path
+								d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+							<rect x="8" y="12" width="8" height="2" rx="1" />
+							<rect x="6" y="15" width="12" height="2" rx="1" />
+						</svg>
+					</div>
+					<h3 class="function-title">Orbital<br>transmission</h3>
+				</div>
+
+				<div class="function-item">
+					<div class="function-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+							<circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+							<path d="M8 12h8M12 8v8" />
+							<circle cx="8" cy="8" r="2" />
+							<circle cx="16" cy="8" r="2" />
+							<circle cx="8" cy="16" r="2" />
+							<circle cx="16" cy="16" r="2" />
+						</svg>
+					</div>
+					<h3 class="function-title">Multi-powder<br>mix</h3>
+				</div>
+
+				<div class="function-item">
+					<div class="function-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z" />
+							<path d="M9 12l2 2 4-4" stroke="white" stroke-width="2" fill="none" />
+						</svg>
+					</div>
+					<h3 class="function-title">Stir in cup</h3>
+				</div>
+
+				<div class="function-item">
+					<div class="function-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+							<path d="M3 17v2h18v-2H3zM3 5v2h18V5H3zm0 6h18v2H3v-2z" />
+							<path d="M7 9h10v6H7z" stroke="currentColor" stroke-width="1" fill="none" />
+						</svg>
+					</div>
+					<h3 class="function-title">Single cup high<br>pressure cleaning</h3>
+				</div>
+
+				<div class="function-item">
+					<div class="function-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+							<path
+								d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+						</svg>
+					</div>
+					<h3 class="function-title">Automatic<br>cup drop</h3>
+				</div>
+
+				<div class="function-item">
+					<div class="function-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+							<path
+								d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.61 5.64 5.36 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z" />
+						</svg>
+					</div>
+					<h3 class="function-title">remote data</h3>
+				</div>
+
+				<div class="function-item">
+					<div class="function-icon">
+						<svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
+							<path
+								d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+							<path d="M12 7v10M7 12h10" stroke="white" stroke-width="1" />
+						</svg>
+					</div>
+					<h3 class="function-title">Background<br>warning</h3>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="center-image">
+			<img src="images/background/type.jpg" alt="">
+		</div>
+
+
+
+		<section class="section-container">
+			<!-- Left Side -->
+			<div class="left-side">
+				<img src="images/background/vendingnew.png" alt="Machine Image" class="machine-image">
+				<h2 class="title">Type</h2>
+				<p class="highlight">99.9% of people choose</p>
+				<p class="description">Both of pump and tap water</p>
+			</div>
+
+			<!-- Right Side -->
+			<div class="right-side">
+				<img src="images/background/vendingnew1.png.jpg" alt="Water Inlet Diagram" class="diagram-image">
 			</div>
 		</section>
-		<!-- End Gallery Section -->
+		<!-- End Protein Shake Section -->
+		<div class="loading-overlay" id="loadingOverlay">
+			<div class="loader"></div>
+		</div>
 
-		<!-- Main Footer -->
-		<footer class="main-footer">
-			<div class="pattern-layer-one" style="background-image: url(images/resource/footer-pattern-1.png)"></div>
-			<div class="pattern-layer-two" style="background-image: url(images/resource/footer-pattern-2.png)"></div>
-			<div class="pattern-layer-three" style="background-image: url(images/background/pattern-6.png)"></div>
-			<div class="auto-container">
-				<!-- Widgets Section -->
-				<div class="widgets-section">
-					<div class="row clearfix">
+		<div class="container">
+			<div class="header">
+				<!-- <div class="brand-logo">GS</div> -->
+				<h1>Standard Product Appearance</h1>
+			</div>
 
-						<!-- Big Column -->
-						<div class="big-column col-lg-6 col-md-12 col-sm-12">
-							<div class="row clearfix">
-
-								<!--Footer Column-->
-								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
-									<div class="footer-widget contact-widget">
-										<h6>Contact Us</h6>
-										<div class="text">6Fifth Avenue 5501, Broadway, New York Morris Street London
-											1234</div>
-										<ul class="contact-list">
-											<li><span class="icon fa fa-send"></span>Your mail @ gmail.com</li>
-											<li><span class="icon fa fa-phone"></span><a
-													href="tel:+123-4567-89000">(123) 4567 89000</a></li>
-										</ul>
-									</div>
-								</div>
-
-								<!--Footer Column-->
-								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
-									<div class="footer-widget links-widget">
-										<h6>Useful Links</h6>
-										<ul class="footer-list">
-											<li><a href="#">Home</a></li>
-											<li><a href="#">About us</a></li>
-											<li><a href="#">Blogs</a></li>
-											<li><a href="#">Terms Of Service</a></li>
-											<li><a href="#">Privacy Policy</a></li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
+			<div class="products-section">
+				<div class="products-grid">
+					<div class="device-container">
+						<div class="device">
+							<img src="images/background/appearance.png" alt="Device 1" class="device-image">
 						</div>
+					</div>
 
-						<!-- Big Column -->
-						<div class="big-column col-lg-6 col-md-12 col-sm-12">
-							<div class="row clearfix">
-
-								<!--Footer Column-->
-								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
-									<div class="footer-widget social-widget">
-										<h6>Follow Us Now</h6>
-										<ul class="social-list">
-											<li><a href="#"><span class="icon fa fa-facebook"></span>facebook</a></li>
-											<li><a href="#"><span class="icon fa fa-twitter"></span>twitter</a></li>
-											<li><a href="#"><span class="icon fa fa-instagram"></span>instagram</a></li>
-											<li><a href="#"><span class="icon fa fa-dribbble"></span>dribbble</a></li>
-										</ul>
-									</div>
-								</div>
-
-								<!-- Footer Column -->
-								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
-									<div class="footer-widget newsletter-widget">
-										<h6>Subscribe</h6>
-										<div class="newsletter-form">
-											<form method="post"
-												action="https://preview.designtone.xyz/html/foodily/contact.html">
-												<div class="form-group">
-													<input type="email" name="email" value="" placeholder="Your Email"
-														required="">
-													<button type="submit" class="theme-btn submit-btn">Subscribe
-														Now</button>
-												</div>
-											</form>
-										</div>
-									</div>
-								</div>
-
-							</div>
+					<div class="device-container">
+						<div class="device">
+							<img src="images/background/appearance2.png" alt="Device 2" class="device-image">
 						</div>
+					</div>
 
+					<div class="device-container">
+						<div class="device">
+							<img src="images/background/appearance3.png" alt="Device 3" class="device-image">
+						</div>
 					</div>
 				</div>
-				<div class="footer-bottom">
-					<div class="copyright">&copy; 2025 Bloombiz Caretives All Rights Reserved.</div>
+			</div>
+		</div>
+
+		<script>
+			// Loading animation
+			window.addEventListener('load', function () {
+				setTimeout(() => {
+					document.getElementById('loadingOverlay').classList.add('hidden');
+				}, 1000);
+			});
+
+			// Add click interactions to device images
+			document.querySelectorAll('.device-image').forEach(image => {
+				image.addEventListener('click', function () {
+					this.style.transform = 'scale(0.98)';
+					setTimeout(() => {
+						this.style.transform = 'scale(1.02)';
+						setTimeout(() => {
+							this.style.transform = 'scale(1)';
+						}, 100);
+					}, 100);
+				});
+			});
+
+			// Add interactions to structure items
+			document.querySelectorAll('.structure-item').forEach(item => {
+				item.addEventListener('click', function () {
+					// Add a pulse effect
+					this.style.transform = 'translateY(-10px) scale(0.98)';
+					setTimeout(() => {
+						this.style.transform = 'translateY(-10px) scale(1)';
+					}, 150);
+				});
+			});
+
+			// Smooth scroll reveal animation for structure items
+			const observerOptions = {
+				threshold: 0.1,
+				rootMargin: '0px 0px -50px 0px'
+			};
+
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach((entry, index) => {
+					if (entry.isIntersecting) {
+						setTimeout(() => {
+							entry.target.style.opacity = '1';
+							entry.target.style.transform = 'translateY(0)';
+						}, index * 200);
+					}
+				});
+			}, observerOptions);
+
+			// Initially hide structure items for animation
+			document.querySelectorAll('.structure-item').forEach(item => {
+				item.style.opacity = '0';
+				item.style.transform = 'translateY(30px)';
+				item.style.transition = 'all 0.6s ease';
+				observer.observe(item);
+			});
+		</script>
+
+		<div class="structure-section">
+			<div class="structure-header">
+				<h2>Structure</h2>
+			</div>
+
+			<div class="structure-grid">
+				<div class="structure-device-container">
+					<div class="structure-device">
+						<img src="images/background/structure1.jpg" alt="Stainless steel water outlet"
+							class="structure-image">
+						<div class="structure-label">Stainless steel water outlet</div>
+					</div>
+				</div>
+
+				<div class="structure-device-container">
+					<div class="structure-device">
+						<img src="images/background/structure2.jpg" alt="Mix in cup" class="structure-image">
+						<div class="structure-label">Mix in cup</div>
+					</div>
+				</div>
+
+				<div class="structure-device-container">
+					<div class="structure-device">
+						<img src="images/background/structure3.jpg" alt="Dustproof cup taking door"
+							class="structure-image">
+						<div class="structure-label">Dustproof cup taking door</div>
+					</div>
 				</div>
 			</div>
-		</footer>
-		<!-- End Main Footer -->
+		</div>
+	</div>
 
+
+
+
+	<section class="product-showcase">
+		<div class="product-container">
+			<div class="product-images">
+				<div class="product-image">
+					<img src="images/background/lastest1.jpg" alt="Coffee Machine Side View">
+				</div>
+				<div class="product-image">
+					<img src="images/background/lastest2.jpg" alt="Coffee Machine Front View">
+				</div>
+			</div>
+
+			<div class="features-grid">
+				<div class="feature-circle orange">
+					<div class="feature-title">Single cup</div>
+					<div class="feature-subtitle">cleaning</div>
+				</div>
+
+				<div class="feature-circle green">
+					<div class="feature-title">high temperature</div>
+					<div class="feature-subtitle">high pressure</div>
+				</div>
+
+				<div class="feature-circle yellow">
+					<div class="feature-title">Hot and cold</div>
+					<div class="feature-subtitle">Dual temperature</div>
+				</div>
+
+				<div class="feature-circle blue">
+					<div class="feature-title">Pure</div>
+					<div class="feature-subtitle">taste</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="details-section">
+		<h2 class="section-title">Details</h2>
+
+		<div class="details-grid">
+			<!-- First Detail Card -->
+			<div class="detail-card">
+				<div class="card-layout-left">
+					<div class="card-image">
+						<img src="images/background/detail1.png">
+					</div>
+					<div class="card-content">
+						<h3>Other options:</h3>
+						<ul class="options-list">
+							<li>Big capacity</li>
+							<li>7 ingredient canisters</li>
+							<li>each one has 4L</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Second Detail Card -->
+			<div class="detail-card">
+				<div class="card-layout-right">
+					<div class="card-image">
+						<img src="images/background/detail2.png.jpg">
+					</div>
+					<div class="card-content">
+						<h3>Other options:</h3>
+						<ul class="options-list">
+							<li>Independent stirring system</li>
+							<li>Mixing in cup</li>
+							<li>Never block</li>
+							<li>Cleaning after each cup</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="detail-card">
+				<div class="card-layout-right">
+					<div class="card-image">
+						<img src="images/background/detail3.png.jpg">
+					</div>
+					<div class="card-content">
+						<h3>Other options:</h3>
+						<ul class="options-list">
+							<li>Smart track </li>
+							<li>Easy to operate</li>
+							<li>Easy to cleaning</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Third Detail Card -->
+			<div class="detail-card single-column-card pulse-animation">
+				<div class="card-image">
+					<img src="images/background/detail4.png">
+				</div>
+				<div class="card-content">
+					<h3>Other options:</h3>
+					<ul class="options-list">
+						<li>Could management system</li>
+						<li>Sals data</li>
+						<li>Remote control （cleaning / AD / Updating new drink）</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="size-section">
+		<!-- <div class="brand-logo">GS</div> -->
+
+		<h1 class="section-title">Size</h1>
+
+		<div class="machine-specs">
+			<div class="machine-size-text">
+				Machine size: <span class="size-highlight">181(H)×76(W)×75(D) cm</span> (Standard Size)
+			</div>
+		</div>
+
+		<div class="diagrams-container">
+			<img src="images/background/size1.jpg.png" alt="Machine Size Diagrams" class="machine-image">
+		</div>
+
+		<div class="package-specs">
+			<div class="package-info wood-package">
+				<div class="package-title">Package size:</div>
+				<div class="package-size">201*86*85cm</div>
+				<div class="package-material">(by wood)</div>
+			</div>
+
+			<div class="package-info carton-package">
+				<div class="package-title">Package size:</div>
+				<div class="package-size">191*78*78cm</div>
+				<div class="package-material">(by carton)</div>
+			</div>
+		</div>
+	</div>
+
+
+	<section class="description-section">
+		<div class="description-container">
+			<div class="description-text-box">
+				<h2>Description</h2>
+				<p class="subtext">Only</p>
+				<div class="highlight">3KWh</div>
+				<p class="subtext">of electricity a day</p>
+			</div>
+			<div class="meter-images">
+				<img src="images/background/description.jpg" alt="Meter Image 1">
+				<img src="images/background/description1.jpg" alt="Meter Image 2">
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="section">
+		<h2>Mixing head disassembly method</h2>
+		<div class="image-container">
+			<img src="images/background/mixing.png" alt="Mixing head disassembly method">
+		</div>
+	</section>
+
+
+	<div class="stirring-main-container">
+		<div class="stirring-header-section">
+			<div class=""></div>
+			<div class="industrial-icon-group">
+				<div class="building-structure-icon"></div>
+			</div>
+			<h1 class="feature-main-title"> Independent stirring</h1>
+		</div>
+
+		<div class="comparison-content-wrapper">
+			<div class="product-showcase-card our-solution-card">
+				<div class="success-indicator-badge"></div>
+				<img src="images/background/independent.jpg" alt="Our Independent Stirring Machine"
+					class="machine-display-image">
+				<div class="benefit-description-text">
+					<h2 class="benefit-main-heading">Easy to clean and never have to deal with clogging.</h2>
+				</div>
+				<div class="solution-category-label">our machines</div>
+			</div>
+
+			<div class="visual-separator-line">
+				<div class="separator-center-dot"></div>
+			</div>
+
+			<div class="product-showcase-card competitor-solution-card">
+				<div class="failure-indicator-badge"></div>
+				<img src="images/background/indenew.png" alt="Competitor Machine" class="machine-display-image">
+				<div class="solution-category-label">Others</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="automatic-track-container">
+		<div class="track-header-section">
+			<div class=""></div>
+			<div class="track-system-icon">
+				<div class="conveyor-track-visual">
+					<div class="track-segment"></div>
+
+				</div>
+			</div>
+			<h1 class="automatic-track-title"> Automatic Track</h1>
+		</div>
+
+		<div class="track-content-wrapper">
+			<div class="smart-track-info-panel">
+				<div class="track-feature-highlight">SMART TECHNOLOGY</div>
+				<h2 class="smart-track-heading">Smart track</h2>
+			</div>
+
+			<div class="machine-showcase-area">
+				<!-- <div class="tech-specs-overlay">Advanced Automation</div> -->
+				<img src="images/background/automatic.png" alt="Automatic Track System" class="automatic-track-image">
+			</div>
+		</div>
+	</div>
+
+	<section class="qualification-section">
+		<div class="qualification-title"> Qualification</div>
+		<img src="images/background/qualification.png" Certificates" class="certificate-image" />
+	</section>
+
+
+
+	<section class="qualification-section">
+		<h2 style="font-weight: bold;"> Qualification</h2>
+		<div class="cert-grid">
+			<div class="cert-item">
+				<img src="images/background/qualii1.png" alt="Certificate 1" />
+			</div>
+			<div class="cert-item">
+				<img src="images/background/quali2.png" alt="Certificate 2" />
+			</div>
+			<div class="cert-item">
+				<img src="images/background/quali3.png" alt="Certificate 3" />
+			</div>
+		</div>
+	</section>
+
+	<!-- Main Footer -->
+	<footer class="main-footer">
+		<div class="pattern-layer-one" style="background-image: url(images/resource/footer-pattern-1.png)"></div>
+		<div class="pattern-layer-two" style="background-image: url(images/resource/footer-pattern-2.png)"></div>
+		<div class="pattern-layer-three" style="background-image: url(images/background/pattern-6.png)"></div>
+		<div class="auto-container">
+			<!-- Widgets Section -->
+			<div class="widgets-section">
+				<div class="row clearfix">
+					<!-- Big Column -->
+					<div class="big-column col-lg-6 col-md-12 col-sm-12">
+						<div class="row clearfix">
+							<!--Footer Column-->
+							<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+								<div class="footer-widget contact-widget">
+									<h6>Contact Us</h6>
+									<div class="text">Meydan Grandstand ,6th floor, Meydan Road ,Nad Al Sheba, Dubai, U.A.E</div>
+									<ul class="contact-list">
+										<li><span class="icon fa fa-send"></span>aliolive@me.com</li>
+										<li><span class="icon fa fa-phone"></span><a
+												href="tel:+123-4567-89000">+971565876625</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<!--Footer Column-->
+							<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+								<div class="footer-widget links-widget">
+									<h6>Useful Links</h6>
+									<ul class="footer-list">
+										<li><a href="index.html">Home</a></li>
+											<li><a href="about.html">About us</a></li>
+											<li><a href="blog-classic.html">Blogs</a></li>
+											<li><a href="events.html">Events</a></li>
+											<li><a href="contact.html">Contact Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Big Column -->
+					<div class="big-column col-lg-6 col-md-12 col-sm-12">
+						<div class="row clearfix">
+							<!--Footer Column-->
+							<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+								<div class="footer-widget social-widget">
+									<h6>Follow Us Now</h6>
+									<ul class="social-list">
+										<li><a href="#"><span class="icon fa fa-facebook"></span>facebook</a></li>
+										<li><a href="#"><span class="icon fa fa-twitter"></span>twitter</a></li>
+										<li><a href="#"><span class="icon fa fa-instagram"></span>instagram</a></li>
+										<li><a href="#"><span class="icon fa fa-dribbble"></span>dribbble</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- Footer Column -->
+							<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+								<div class="footer-widget newsletter-widget">
+									<h6>Subscribe</h6>
+									<div class="newsletter-form">
+										<form method="post"
+											action="https://preview.designtone.xyz/html/foodily/contact.html">
+											<div class="form-group">
+												<input type="email" name="email" value="" placeholder="Your Email"
+													required="">
+												<button type="submit" class="theme-btn submit-btn">Subscribe
+													Now</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="copyright">&copy; 2025 Bloombiz Caretives All Rights Reserved.</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Main Footer -->
 	</div>
 	<!--End pagewrapper-->
 
@@ -849,6 +902,26 @@
 	<!--Scroll to top-->
 	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
 
+	<!-- Add this JavaScript code below your header or in your main JavaScript file -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Handle direct navigation for dropdown parent items
+			const dropdownParents = document.querySelectorAll('.dropdown > a');
+
+			dropdownParents.forEach(function (parentLink) {
+				parentLink.addEventListener('click', function (e) {
+					// Check if link has a real href value (not just '#')
+					const href = this.getAttribute('href');
+					if (href && href !== '#') {
+						// Navigate directly to the href if it's a real URL
+						window.location.href = href;
+						e.preventDefault();
+					}
+				});
+			});
+		});
+	</script>
+
 	<script src="js/jquery.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -863,7 +936,6 @@
 	<script src="js/nav-tool.js"></script>
 	<script src="js/jquery-ui.js"></script>
 	<script src="js/script.js"></script>
-
 </body>
 
 </html>
