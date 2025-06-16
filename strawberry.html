@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Restho - Strawberry</title>
+    <title>product detail</title>
     <!-- Stylesheets -->
     <link rel="icon" href="assets/images/icon/logo-icon.svg" type="image/gif" sizes="20x20">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -69,13 +69,11 @@
                                     <li class="dropdown">
                                         <a href="events.html" class="" data-toggle="dropdown">Events</a>
                                     </li>
-
                                     <li class="dropdown">
                                         <a href="blog-classic.html" class="" data-toggle="dropdown">Blog</a>
                                     </li>
                                     <li class="dropdown"><a href="vendingmachine.html"
                                             data-toggle="dropdown">Vendingmachine</a>
-
                                     <li><a href="contact.html">Contact us</a></li>
                                 </ul>
                             </div>
@@ -130,7 +128,6 @@
                             <li class="dropdown">
                                 <a href="events.html" class="" data-toggle="dropdown">Events</a>
                             </li>
-
                             <li class="dropdown">
                                 <a href="blog-classic.html" class="" data-toggle="dropdown">Blog</a>
                             </li>
@@ -230,7 +227,7 @@
                         <div class="prod-details-content">
                             <h2 id="product-name">Loading...</h2>
                             <div class="price-tag">
-                                <h4 id="product-price">$0 <del id="product-old-price"></del></h4>
+                               <h4 id="product-price">AED 0 <del id="product-old-price"></del></h4>
                             </div>
                             <p id="product-description" style="white-space: pre-line;">Loading description...</p>
                             <div class="category-tag">
@@ -314,7 +311,7 @@
                                                             </div>
                                                             <ul class="product-review">
                                                                 <li><i class="bi bi-star-fill"></i></li>
-                                                                <li><i class="bi bi08/01/2024 star-fill"></i></li>
+                                                                <li><i class="bi bi-star-fill"></i></li>
                                                                 <li><i class="bi bi-star-fill"></i></li>
                                                                 <li><i class="bi bi-star-fill"></i></li>
                                                                 <li><i class="bi bi-star-fill"></i></li>
@@ -511,10 +508,10 @@
                                         <h6>Useful Links</h6>
                                         <ul class="footer-list">
                                             <li><a href="index.html">Home</a></li>
-											<li><a href="about.html">About us</a></li>
-											<li><a href="blog-classic.html">Blogs</a></li>
-											<li><a href="events.html">Events</a></li>
-											<li><a href="contact.html">Contact Us</a></li>
+                                            <li><a href="about.html">About us</a></li>
+                                            <li><a href="blog-classic.html">Blogs</a></li>
+                                            <li><a href="events.html">Events</a></li>
+                                            <li><a href="contact.html">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -690,8 +687,8 @@
                     }
 
                     if (priceElement) {
-                        priceElement.innerHTML = `$${product.price.toFixed(2)}` +
-                            (product.costPrice ? ` <del>$${product.costPrice.toFixed(2)}</del>` : '');
+                        priceElement.innerHTML = `AED ${product.price.toFixed(2)}` +
+                            (product.costPrice ? ` <del>AED ${product.costPrice.toFixed(2)}</del>` : '');
                     }
                     if (descriptionElement) {
                         descriptionElement.innerText = product.description || 'No description available.';
