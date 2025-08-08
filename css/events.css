@@ -1035,7 +1035,7 @@ body {
         @media (max-width: 768px) {
             .booking-container {
                 grid-template-columns: 1fr;
-                padding: 20px;
+                /* padding: 20px; */
             }
             
             .form-row {

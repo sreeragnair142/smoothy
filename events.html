@@ -51,7 +51,7 @@
                             <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                                 <ul class="navigation clearfix">
                                     <li><a href="index.html">Home</a></li>
-                                    <li class="dropdown"><a href="about.html">About</a></li>
+                                    <li class=""><a href="about.html">About</a></li>
                                     <li class="dropdown">
                                         <a href="#">Our Products</a>
                                         <ul class="dropdown-menu">
@@ -64,9 +64,9 @@
                                             <li><a href="frozenfruits.html">Frozen Fruits</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="events.html">Events</a></li>
-                                    <li class="dropdown"><a href="blog-classic.html">Blog</a></li>
-                                    <li class="dropdown"><a href="vendingmachine.html">Vendingmachine</a></li>
+                                    <li class=""><a href="events.html">Events</a></li>
+                                    <li class=""><a href="blog-classic.html">Blog</a></li>
+                                    <li class=""><a href="vendingmachine.html">Vendingmachine</a></li>
                                     <li><a href="contact.html">Contact us</a></li>
                                 </ul>
                             </div>
@@ -455,23 +455,29 @@
                 }
 
                 function initTimeSlots() {
-                    const timeSlotsContainer = document.getElementById('timeSlots');
-                    const times = ['09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00'];
-                    timeSlotsContainer.innerHTML = '';
-                    times.forEach(time => {
-                        const slot = document.createElement('button');
-                        slot.type = 'button';
-                        slot.className = 'time-slot';
-                        slot.dataset.time = time;
-                        slot.textContent = time;
-                        slot.addEventListener('click', () => {
-                            document.querySelectorAll('.time-slot').forEach(s => s.classList.remove('selected'));
-                            slot.classList.add('selected');
-                            selectedTime = time;
-                        });
-                        timeSlotsContainer.appendChild(slot);
-                    });
-                }
+    const timeSlotsContainer = document.getElementById('timeSlots');
+    timeSlotsContainer.innerHTML = '';
+
+    // Hours from 9 AM to 5 PM inclusive
+    for (let hour = 9; hour <= 17; hour++) {
+        let period = hour >= 12 ? 'PM' : 'AM';
+        let hour12 = hour % 12 === 0 ? 12 : hour % 12;
+        let timeString = `${hour12}:00 ${period}`;
+
+        const slot = document.createElement('button');
+        slot.type = 'button';
+        slot.className = 'time-slot';
+        slot.dataset.time = timeString;
+        slot.textContent = timeString;
+        slot.addEventListener('click', () => {
+            document.querySelectorAll('.time-slot').forEach(s => s.classList.remove('selected'));
+            slot.classList.add('selected');
+            selectedTime = timeString;
+        });
+        timeSlotsContainer.appendChild(slot);
+    }
+}
+
 
                 function initNavigation() {
                     document.getElementById('prevMonth').addEventListener('click', () => {

@@ -7859,3 +7859,78 @@
     }
 }
 
+@media (max-width: 768px) {
+  .fluid-section-one .image-column .image-box img {
+    max-width: 60%; /* Reduce width */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+    border-radius: 15px; /* Optional: Rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15); /* Optional: Soft shadow */
+	margin-bottom: 70px;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .gallery-block-two {
+    width: 48% !important; /* two per row with space */
+    margin: 1% 1% 20px 1%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* important to keep overlay absolute inside */
+  }
+
+  .gallery-block-two:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 0.2);
+  }
+
+  .gallery-block-two .image-box {
+    position: relative;
+    height: 160px;
+  }
+
+  .gallery-block-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .overlay-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0 0 12px 12px;
+  }
+
+  .gallery-block-two:hover .overlay-box,
+  .gallery-block-two:focus-within .overlay-box {
+    opacity: 1;
+  }
+
+  /* Remove this block so description is hidden by default on mobile */
+  /*
+  .gallery-block-two .overlay-box {
+    position: static;
+    background: transparent;
+    color: #333;
+    opacity: 1;
+    padding: 8px 5px;
+    border-radius: 0;
+  }
+  */
+}

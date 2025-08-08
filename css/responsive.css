@@ -197,8 +197,9 @@
 	}
 	
 	.main-header .header-upper .logo-box{
+		/* margin-bottom: 10px; */
 		margin: 0px;
-		width:100%;
+		/* width:100%; */
 		padding-bottom:0px;
 		text-align:center;
 	}
@@ -208,10 +209,10 @@
 		background-color:#81817f;
 	}
 	
-	.main-header .nav-outer{
+	/* .main-header .nav-outer{
 		width:100%;
 		padding-top:0px;
-	}
+	} */
 	
 	.main-menu .navigation > li > a{
 		text-transform:capitalize;
@@ -795,9 +796,9 @@
 		margin:5px 11px;
 	}
 	
-	.main-header .nav-outer{
+	/* .main-header .nav-outer{
 		width:100%;
-	}
+	} */
 	
 	.main-slider h3{
 		font-size:20px;
@@ -894,6 +895,8 @@
 	
 	.main-header .header-upper .logo-box{
 		padding:0px;
+		position: relative;
+		bottom: 18px;
 	}
 	
 	.deal-section .content-box{
